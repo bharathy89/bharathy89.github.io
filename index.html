@@ -1,20 +1,9 @@
-
-<!-- 
-    /****************************************************************************************************************/
-    /*                                                                                                              */
-    /*    Theme:    : GhostScroll (Based on Casper)                                                                 */
-    /*    Created by: Yonatan Wolowelsky                                                                            */
-    /*    Website   : http://grmmph.com                                                                             */
-    /*    License   : MIT                                                                                           */
-    /*                                                                                                              */
-    /****************************************************************************************************************/  -->
-
 <!DOCTYPE html>
 <html>
 <head>
     
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
     <title>Blogio</title>
@@ -24,19 +13,16 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="shortcut icon" href="favicon.ico">
+
     
-    <link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
-
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?v=fe1f881674" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
 
     
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Blogio" href="rss/index.html">
-<link rel="canonical" href="http://my-ghost-blog.com/" />
+<link rel="canonical" href="http://bharathy89.github.io/" />
 </head>
 <body class="home-template">
 
@@ -46,114 +32,71 @@
 
 
 
-<header id="site-head" >
+<header class="site-head" >
     <div class="vertical">
-        <div id="site-head-content" class="inner">
-
-            <a id="blog-logo" href="http://my-ghost-blog.com"><img src="content/images/2014/Feb/rocket.png" alt="Blog Logo" /></a>
+        <div class="site-head-content inner">
+            <a class="blog-logo" href="http://bharathy89.github.io"><img src="content/images/2014/Feb/rocket.png" alt="Blog Logo" /></a>
             <h1 class="blog-title">Blogio</h1>
             <h2 class="blog-description">Hand crafted blogs! </h2>
-
-            <a class='btn first'>Cut to the chase</a><br>
-            <i id='header-arrow' class="icon-angle-down"></i>
         </div>
     </div>
-
 </header>
 
 
 <main class="content" role="main">
 
-    <div class='fixed-nav'>
-    </div>
-
     
     
-    <div class='post-holder'>
-        
-            
-                <article class="post first">
-            
-        
-            <header class="post-header">
-                
-                <h2 class="post-title">Project - PageRank</h2>
 
-            </header>
-            <section class="post-content">
-                <p><p>PageRank is what powers the google search. </p>
+    <article class="post">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="2014-02-16">16 Feb 2014</time> </span>
+            <h2 class="post-title"><a href="2014/02/16/project-pagerank/index.html">Project - PageRank</a></h2>
 
-<p>Fun Fact : We think page in pagerank refers to web pages but its not it is Page as in Larry Page, CEO of Google.</p>
-
-<p>Pagerank is like finding the most the popular web page among its peers and present it to the user as the most relevant page. This popularity is calculated by the hyper links. The formula for calculating page rank is </p>
-
-<p><strong>PR(A) = (1-d)/N + d( sum of all( PR(I)/NO(I)))</strong></p>
-
-<p>where <br />
-<strong>A</strong> - It is the page for that we want to calculate page rank for.</p>
-
-<p><strong>d</strong> - 0.85 dampening factor. ( There is lot of research that went into calculating this value which cannot be covered here. So do your own research on this. The only thing I can mention here is this value causes the pagerank values for any A to converge as the number of iterations increases)</p>
-
-<p><strong>N</strong> - Total number of pages for which you want to calculate pagerank.</p>
-
-<p><strong>I</strong> - is the inlink page for A i.e you can reach A with a hyper link from I.</p>
-
-<p><strong>NO(I)</strong> - number of outlinks from I i.e. number of hyper links present on I.</p>
-
-<p>For more information I would suggest you to look it up on <a href="http://en.wikipedia.org/wiki/PageRank">wiki</a>. </p>
-
-<p>So for my project I took the wiki dumps and calculated the page rank.</p>
-
-<p>The code can be found at <a href="https://github.com/bharathy89/PageRank">github</a></p>
-
-<p>have fun!</p></p>
-            </section>
-        </article>
-        <div class='post-after'></div>
-    </div>
+        </header>
+        <section class="post-excerpt">
+            <p>PageRank is what powers the google search.  Fun Fact : We think page in pagerank refers to web pages but its not it is Page as in Larry Page, CEO of Google. Pagerank is like finding the most the popular web page among its peers and present it to the user&hellip;</p>
+        </section>
+    </article>
 
     
-    <div class='post-holder'>
-        
-            
-                
-                    <article class="post last">
-                
-            
-        
-            <header class="post-header">
-                
-                <h2 class="post-title">Blog!</h2>
 
-            </header>
-            <section class="post-content">
-                <p><p>Well this is my third attempt towards blogging. I am amazed by the power of node.js and ghost thats running on it. So I wanted to give blogging another shot and I love the interface that ghost provides for a blogger. So lets see how far my blogging journey goes.</p></p>
-            </section>
-        </article>
-        <div class='post-after'></div>
-    </div>
+    <article class="post">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="2014-02-16">16 Feb 2014</time> </span>
+            <h2 class="post-title"><a href="2014/02/16/blog/index.html">Blog!</a></h2>
+
+        </header>
+        <section class="post-excerpt">
+            <p>Well this is my third attempt towards blogging. I am amazed by the power of node.js and ghost thats running on it. So I wanted to give blogging another shot and I love the interface that ghost provides for a blogger. So lets see how far my blogging journey&hellip;</p>
+        </section>
+    </article>
 
     
 
     
+    <nav class="pagination" role="navigation">
     
+    <span class="page-number">Page 1 of 1</span>
+    
+</nav>
 
 </main>
 
     <footer class="site-footer">
+        <a class="subscribe icon-feed" href="http://bharathy89.github.io/rss/"><span class="tooltip">Subscribe!</span></a>
         <div class="inner">
-             <section class="poweredby"><a href="http://ghostscroll.grmmph.com/">GhostScroll</a> theme by <a href="http://grmmph.com">Yonatan</a>.<br>
-              Proudly published with <a class="i-ghost" href="http://ghost.org">Ghost</a></section>
+             <section class="copyright">All content copyright <a href="http://bharathy89.github.io/">Blogio</a> &copy; 2014 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
         </div>
     </footer>
 
     
-    <script src="shared/vendor/jquery/jquery.js?v=b73a3efe3f"></script>
+    <script src="shared/vendor/jquery/jquery.js?v=fe1f881674"></script>
 
     
-    <script type="text/javascript" src="assets/js/icons.js"></script>
-    <script type="text/javascript" src="assets/js/index.js"></script>
-
+    <script type="text/javascript" src="assets/js/jquery.fitvids.js?v=fe1f881674"></script>
+    <script type="text/javascript" src="assets/js/index.js?v=fe1f881674"></script>
 
 </body>
 </html>
