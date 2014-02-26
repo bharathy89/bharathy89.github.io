@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <title>Project - Circle Icons!</title>
+    <title>Project - FizzBuzz</title>
     <meta name="description" content="" />
 
     <meta name="HandheldFriendly" content="True" />
@@ -22,7 +22,7 @@
     
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Blogio" href="../../../../rss/index.html">
-<link rel="canonical" href="http://bharathy89.github.io/2014/02/18/project-circle-icons/" />
+<link rel="canonical" href="http://bharathy89.github.io/2014/02/26/project-fizzbuzz/" />
 </head>
 <body class="post-template">
 
@@ -47,18 +47,41 @@
         
         
 
-            <span class="post-meta"><time datetime="2014-02-18">18 Feb 2014</time> </span>
+            <span class="post-meta"><time datetime="2014-02-26">26 Feb 2014</time> </span>
 
-            <h1 class="post-title">Project - Circle Icons!</h1>
+            <h1 class="post-title">Project - FizzBuzz</h1>
 
             <section class="post-content">
-                <p>I had a good day today! I got my hands dirty doing vector art its fun and I love it. These are some of the icons I could make really fast. Its so easy if you are using the right tools. I am using a trial version of sketch app for mac. I generally look for open source alternatives but I thought Ill give this a try and its addictive.</p>
+                <p>Hello! Its been sometime since I wrote by blog. It has been a hectic week. I went to Hoggetowne hackathon came in second which is awesome. I got to meet some pretty good developers there. </p>
 
-<p><img src="../../../../content/images/2014/Feb/icons.png" alt="icons" /></p>
+<p>Anyways Today I found something interesting ever heard of FizzBuzz its ridiculous. Its kind of a simple hack to find weak programmers. The text goes like this :</p>
 
-<p>I like flat colors 2013 has been the year of flat colors. I hope this trend doesnt go away for some time because its kind of easy for me to draw simple shapes and dont have to spend much time on textures and shadows and other stuff. <strong>:D</strong> </p>
+<p><strong>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".</strong></p>
 
-<p>I got my inspiration from <a href="http://www.elegantthemes.com/blog/freebie-of-the-week/beautiful-flat-icons-for-free">circle icons</a> they obviously are much prettier than mine. Baby steps!!</p>
+<p>Thats weird anyone can do it...right? nope, some say its like a pre-screen for anyone who is a weak programmer. Check this <a href="http://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/">blog</a>. I didn't want to be one of "those guys" :P </p>
+
+<p>So I wrote the code and It made feel like a programmer again "one step above a sucky one atleast I think"....</p>
+
+<p>Anyways heres the code :</p>
+
+<pre><code>public static void main(String args[]) {
+    for(int i=1; i&lt; 101; i++) {
+        if(i%3==0 &amp;&amp; i%5==0) {
+            System.out.print("FizzBuzz  ");
+        } else if(i%3==0) {
+            System.out.print("Fizz  ");
+        } else if(i%5==0) {
+            System.out.print("Buzz  ");
+        }else {
+            System.out.print(""+i+" ");
+        }       
+    }
+}
+</code></pre>
+
+<p>Now I know you can improve the if conditions and make it more optimized....But ahhhh! I feel lazy!...</p>
+
+<p>Its fun writing about silly but important stuff though!...... </p>
             </section>
            <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -87,15 +110,15 @@ Android Addict.</p>
 
                 <section class="share">
                     <h4>Share this post</h4>
-                    <a class="icon-twitter" href="http://twitter.com/share?text=Project%20-%20Circle%20Icons!&url=http://bharathy89.github.io/2014/02/18/project-circle-icons/"
+                    <a class="icon-twitter" href="http://twitter.com/share?text=Project%20-%20FizzBuzz&url=http://bharathy89.github.io/2014/02/26/project-fizzbuzz/"
                         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                         <span class="hidden">Twitter</span>
                     </a>
-                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://bharathy89.github.io/2014/02/18/project-circle-icons/"
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://bharathy89.github.io/2014/02/26/project-fizzbuzz/"
                         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                         <span class="hidden">Facebook</span>
                     </a>
-                    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://bharathy89.github.io/2014/02/18/project-circle-icons/"
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://bharathy89.github.io/2014/02/26/project-fizzbuzz/"
                        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                         <span class="hidden">Google+</span>
                     </a>
