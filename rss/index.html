@@ -1,5 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blogio]]></title><description><![CDATA[Hand crafted blogs! ]]></description><link>http://bharathy89.github.io/</link><generator>Ghost v0.4.1</generator><lastBuildDate>Thu, 27 Feb 2014 18:09:38 GMT</lastBuildDate><atom:link href="http://bharathy89.github.io/rss/" rel="self" type="application/rss+xml"/><author><![CDATA[bharathy89]]></author><ttl>60</ttl><item><title><![CDATA[Project - icons continuation...]]></title><description><![CDATA[<p><img src='http://bharathy89.github.io/content/images/2014/Feb/save_2x.png'  alt="" />
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blogio]]></title><description><![CDATA[Hand crafted blogs! ]]></description><link>http://bharathy89.github.io/</link><generator>Ghost v0.4.1</generator><lastBuildDate>Tue, 25 Mar 2014 03:19:35 GMT</lastBuildDate><atom:link href="http://bharathy89.github.io/rss/" rel="self" type="application/rss+xml"/><author><![CDATA[bharathy89]]></author><ttl>60</ttl><item><title><![CDATA[Project - Sudoku Solver brute force method]]></title><description><![CDATA[<p>My version of bruteforce sudoku solver :</p>
+
+<pre><code>boolean solveSudoku(int[][] sudokumatrix) { 
+    boolean solved = false;
+    for(int i = 0; i&lt; 9; i++) {
+        for(int j =0; j &lt;9; j++) {
+            if(sudokumatrix[i][j] == 0) {
+                int k = 1;
+                count++;
+                for( k = 1; k &lt; 10; k++) {
+                    boolean alreadyPresent = false;
+
+                    // check in the row.
+                    for(int l= 0 ; l&lt; 9; l++) {
+                        if(sudokumatrix[i][l] == k &amp;&amp; l != j){
+                            alreadyPresent = true;
+                            break;
+                        }
+                    }
+
+                    // check in the column.
+                    if(!alreadyPresent){
+                        for(int l= 0; l &lt; 9; l++) {
+                            if(sudokumatrix[l][j] == k &amp;&amp; l != i) {
+                                alreadyPresent = true;
+                                break;
+                            }
+                        }
+                    }
+
+                    // check in the box.
+                    if(!alreadyPresent){
+                        int m = 0, n= 0;
+                        if(0 &lt;= i &amp;&amp; i &lt; 3 ) {
+                            m = 0;
+                        }else if(3&lt;=i &amp;&amp; i &lt; 6){
+                            m = 3;
+                        }else if(6&lt;=i &amp;&amp; i &lt; 9){
+                            m = 6;
+                        }
+
+                        if(0 &lt;= j &amp;&amp; j &lt; 3 ) {
+                            n = 0;
+                        }else if(3&lt;=j &amp;&amp; j &lt; 6){
+                            n = 3;
+                        }else if(6&lt;=j &amp;&amp; j &lt; 9){
+                            n = 6;
+                        }
+
+                        for(int m1 = m; m1 &lt; m+3; m1++){
+                            for(int n1 = n; n1&lt;n+3; n1++){
+                                if(m1!= i &amp;&amp; n1 !=j &amp;&amp; sudokumatrix[m1][n1]== k){
+                                    alreadyPresent = true;
+                                    break;
+                                }
+                            }
+                            if(alreadyPresent)
+                                break;
+                        }
+                    }
+                    if(!alreadyPresent){
+                        sudokumatrix[i][j] = k;
+                        if(solveSudoku(sudokumatrix)) {
+                        // k value solved the sudoku for that cell.
+                            return true;
+                        }else {
+                            // reverting since this k value doesnt solve the sudoku.
+                            sudokumatrix[i][j] = 0;
+                            solved = false;
+                        }
+                    }
+                }
+                // If you reach this part it means there is no value that we can put in this cell.
+                if (k == 10){
+                    return false;
+                }
+            }   
+        }
+    }
+    // If you reach this part that means there is no empty cell in the sudoku is.
+    return true;
+}
+</code></pre>]]></description><link>http://bharathy89.github.io/2014/03/24/project-sudoku-solver-brute-force-method/</link><guid isPermaLink="false">6458bd48-5f68-41ed-a1af-6443975aa831</guid><dc:creator><![CDATA[bharathy89]]></dc:creator><pubDate>Tue, 25 Mar 2014 03:18:08 GMT</pubDate></item><item><title><![CDATA[Project - icons continuation...]]></title><description><![CDATA[<p><img src='http://bharathy89.github.io/content/images/2014/Feb/save_2x.png'  alt="" />
 <a href='http://dribbble.com/shots/1439590-Hulkamania?list=show&amp;tag=hulk_hogan' >My inspiration for Hulk Hogan came from </a>
 <img src='http://bharathy89.github.io/content/images/2014/Feb/icons-1.png'  alt="" />
 <img src='http://bharathy89.github.io/content/images/2014/Feb/newicons_2x.png'  alt="" />
